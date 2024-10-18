@@ -14,7 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.mchaves.api_park_two.entity.Usuario;
 import com.mchaves.api_park_two.service.UsuarioService;
+import com.mchaves.api_park_two.web.dto.UsuarioCreateDto;
+import com.mchaves.api_park_two.web.dto.UsuarioResponseDto;
 import com.mchaves.api_park_two.web.dto.UsuarioSenhaDto;
+import com.mchaves.api_park_two.web.dto.mapper.UsuarioMapper;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -35,9 +38,9 @@ public class UsuarioContoller {
     }
 
     @PostMapping
-    public ResponseEntity<Usuario> create(@RequestBody Usuario usuario) {
-        Usuario user = usuarioService.salvar(usuario);
-        return ResponseEntity.status(HttpStatus.CREATED).body(user);
+    public ResponseEntity<UsuarioResponseDto> create(@RequestBody UsuarioCreateDto usuario) {
+        Usuario user = usuarioService.salvar(UsuarioMapper.toUsuario(usuario));
+        return ResponseEntity.status(HttpStatus.CREATED).body(UsuarioMapper.toDto(user));
 
     }
 
