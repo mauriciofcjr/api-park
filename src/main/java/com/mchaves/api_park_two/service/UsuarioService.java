@@ -1,5 +1,7 @@
 package com.mchaves.api_park_two.service;
 
+import java.util.List;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -39,6 +41,11 @@ public class UsuarioService {
             throw new RuntimeException("Senhas não conferem!");
         }
         user.setPassword(novaSenha);        
+    }
+
+    @Transactional(readOnly = true)
+    public List<Usuario> buscarTodos(){
+        return  usuarioRepository.findAll();
     }
 
 }

@@ -1,5 +1,7 @@
 package com.mchaves.api_park_two.web.controller;
 
+import java.util.List;
+
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -43,6 +45,12 @@ public class UsuarioContoller {
     public ResponseEntity<Void> updatePassword(@PathVariable Long id, @Valid @RequestBody UsuarioSenhaDto dto){
         usuarioService.editarSenha(id, dto.getSenhaAtual(), dto.getNovaSenha(), dto.getConfirmaSenha());
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping
+    public ResponseEntity<List<Usuario>> getAll(){
+        List<Usuario> usuarios = usuarioService.buscarTodos();
+        return ResponseEntity.ok(usuarios);
     }
 
 }
