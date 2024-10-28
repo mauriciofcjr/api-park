@@ -31,8 +31,8 @@ public class UsuarioContoller {
 
 
     @GetMapping("/{id}")
-    public ResponseEntity<Usuario> findById(@PathVariable Long id) {
-        Usuario user = usuarioService.findById(id);
+    public ResponseEntity<UsuarioResponseDto> findById(@PathVariable Long id) {
+        UsuarioResponseDto user = UsuarioMapper.toDto(usuarioService.findById(id));
         return ResponseEntity.ok(user);
 
     }
@@ -51,8 +51,8 @@ public class UsuarioContoller {
     }
 
     @GetMapping
-    public ResponseEntity<List<Usuario>> getAll(){
-        List<Usuario> usuarios = usuarioService.buscarTodos();
+    public ResponseEntity<List<UsuarioResponseDto>> getAll(){
+        List<UsuarioResponseDto> usuarios = UsuarioMapper.toListDto(usuarioService.buscarTodos());
         return ResponseEntity.ok(usuarios);
     }
 
