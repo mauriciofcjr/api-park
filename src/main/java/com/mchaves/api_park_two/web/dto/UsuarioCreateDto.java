@@ -18,8 +18,8 @@ public class UsuarioCreateDto {
 
     @NotBlank
     private String name;
-    @NotBlank
     @Email(message = "formato do e-mail está invalido", regexp = "^[a-z0-9.+-]+@[a-z0-9.-]+\\.[a-z]{2,}$")
+    @NotBlank
     private String username;
     @NotBlank
     @Size(min = 6, max = 6)
