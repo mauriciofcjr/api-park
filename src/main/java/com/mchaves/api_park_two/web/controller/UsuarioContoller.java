@@ -38,7 +38,7 @@ public class UsuarioContoller {
     }
 
     @PostMapping
-    public ResponseEntity<UsuarioResponseDto> create(@RequestBody  @Valid UsuarioCreateDto usuario) {
+    public ResponseEntity<UsuarioResponseDto> create( @Valid @RequestBody  UsuarioCreateDto usuario) {
         Usuario user = usuarioService.salvar(UsuarioMapper.toUsuario(usuario));
         return ResponseEntity.status(HttpStatus.CREATED).body(UsuarioMapper.toDto(user));
 
