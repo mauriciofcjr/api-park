@@ -1,10 +1,10 @@
-package com.mchaves.api_park_two;
+package com.mchaves.api_news;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApiParkTwoApplicationTests {
+class ApiNewsApplicationTests {
 
 	@Test
 	void contextLoads() {
