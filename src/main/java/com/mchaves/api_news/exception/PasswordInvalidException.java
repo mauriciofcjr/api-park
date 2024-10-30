@@ -1,4 +1,4 @@
-package com.mchaves.api_park_two.exception;
+package com.mchaves.api_news.exception;
 
 public class PasswordInvalidException extends RuntimeException {
 

@@ -1,4 +1,4 @@
-package com.mchaves.api_park_two.entity;
+package com.mchaves.api_news.entity;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;

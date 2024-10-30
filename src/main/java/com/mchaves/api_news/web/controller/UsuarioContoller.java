@@ -1,4 +1,4 @@
-package com.mchaves.api_park_two.web.controller;
+package com.mchaves.api_news.web.controller;
 
 import java.util.List;
 
@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.mchaves.api_park_two.entity.Usuario;
-import com.mchaves.api_park_two.service.UsuarioService;
-import com.mchaves.api_park_two.web.dto.UsuarioCreateDto;
-import com.mchaves.api_park_two.web.dto.UsuarioResponseDto;
-import com.mchaves.api_park_two.web.dto.UsuarioSenhaDto;
-import com.mchaves.api_park_two.web.dto.mapper.UsuarioMapper;
+import com.mchaves.api_news.entity.Usuario;
+import com.mchaves.api_news.service.UsuarioService;
+import com.mchaves.api_news.web.dto.UsuarioCreateDto;
+import com.mchaves.api_news.web.dto.UsuarioResponseDto;
+import com.mchaves.api_news.web.dto.UsuarioSenhaDto;
+import com.mchaves.api_news.web.dto.mapper.UsuarioMapper;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;

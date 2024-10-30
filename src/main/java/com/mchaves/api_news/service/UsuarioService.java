@@ -1,13 +1,13 @@
-package com.mchaves.api_park_two.service;
+package com.mchaves.api_news.service;
 
 import java.util.List;
 
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.mchaves.api_park_two.entity.Usuario;
-import com.mchaves.api_park_two.exception.PasswordInvalidException;
-import com.mchaves.api_park_two.repository.UsuarioRepository;
+import com.mchaves.api_news.entity.Usuario;
+import com.mchaves.api_news.exception.PasswordInvalidException;
+import com.mchaves.api_news.repository.UsuarioRepository;
 
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;

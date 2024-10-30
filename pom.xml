@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.mchaves</groupId>
-	<artifactId>api-park-two</artifactId>
+	<artifactId>api-news</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>api-park-two</name>
+	<name>api-news</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
@@ -77,6 +77,11 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+			<version>2.6.0</version>
+		 </dependency>	  
 	</dependencies>
 
 	<build>

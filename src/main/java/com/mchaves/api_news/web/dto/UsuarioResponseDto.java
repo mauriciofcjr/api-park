@@ -1,4 +1,4 @@
-package com.mchaves.api_park_two.web.dto;
+package com.mchaves.api_news.web.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

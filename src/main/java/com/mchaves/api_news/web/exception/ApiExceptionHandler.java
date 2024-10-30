@@ -1,4 +1,4 @@
-package com.mchaves.api_park_two.web.exception;
+package com.mchaves.api_news.web.exception;
 
 
 import org.springframework.dao.DataIntegrityViolationException;
@@ -10,7 +10,7 @@ import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.mchaves.api_park_two.exception.PasswordInvalidException;
+import com.mchaves.api_news.exception.PasswordInvalidException;
 
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.servlet.http.HttpServletRequest;

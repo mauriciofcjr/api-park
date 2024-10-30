@@ -1,4 +1,4 @@
-package com.mchaves.api_park_two;
+package com.mchaves.api_news;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

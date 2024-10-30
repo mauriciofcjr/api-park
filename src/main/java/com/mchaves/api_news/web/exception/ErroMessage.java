@@ -1,4 +1,4 @@
-package com.mchaves.api_park_two.web.exception;
+package com.mchaves.api_news.web.exception;
 
 import java.util.HashMap;
 import java.util.Map;

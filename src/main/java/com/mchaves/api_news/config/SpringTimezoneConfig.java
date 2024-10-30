@@ -1,4 +1,4 @@
-package com.mchaves.api_park_two.config;
+package com.mchaves.api_news.config;
 
 import java.util.TimeZone;
 

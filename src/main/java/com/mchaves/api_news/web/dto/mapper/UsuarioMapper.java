@@ -1,4 +1,4 @@
-package com.mchaves.api_park_two.web.dto.mapper;
+package com.mchaves.api_news.web.dto.mapper;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -6,9 +6,9 @@ import java.util.stream.Collectors;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.PropertyMap;
 
-import com.mchaves.api_park_two.entity.Usuario;
-import com.mchaves.api_park_two.web.dto.UsuarioCreateDto;
-import com.mchaves.api_park_two.web.dto.UsuarioResponseDto;
+import com.mchaves.api_news.entity.Usuario;
+import com.mchaves.api_news.web.dto.UsuarioCreateDto;
+import com.mchaves.api_news.web.dto.UsuarioResponseDto;
 
 public class UsuarioMapper {
 
